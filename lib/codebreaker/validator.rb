@@ -5,11 +5,11 @@ module Codebreaker
        @errors = []
     end
     def valid?(ins)
-        if ins =~ /[1-6]{4}$/ 
-           @errors = []
-        else 
-           @errors << "Invalid input value"
-        end	
-	  end
-   end
+      if ins =~ /[1-6]{4}$/ 
+        @errors = []
+      else 
+        @errors << "Invalid input value"
+      end	
+    end
+  end
 end  
