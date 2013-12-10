@@ -1,7 +1,7 @@
 module Codebreaker
   class Storage
     def save_results
-      File.open(f_name, 'w') { |file| file.write(" Player: #{@player.user_name} finished game.\n Number of attempts: #{@attempts_number}") }	
+      File.open(f_name, 'w') { |file| file.write(" Player: #{@player.user_name} finished game.\n Number of attempts: #{@attempts_number} \n Score: #{@user.score}") }	
     end
   end
 end
